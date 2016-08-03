@@ -61,83 +61,118 @@ $(function () {
 	
 
 function getHeartPoint(t) {
-	if(t<9) {
-		var x = 183;
+	if(t<7) {
+		var x = 227-13 * t;
 
-		var y = 126 + 30 * t;
+		var y = 134 + 25 * t;
 
 		return new Array(offsetX + x, offsetY + y);
 	}
-    if(t<12&&t>=9) {
-        var x = 213+30*(t-9);
+    if(t<10&&t>=7) {
+        var x = 227+27*(t-7);
 
-        var y = 134;
+        var y = 185;
 
         return new Array(offsetX + x, offsetY + y);
     }
-    if(t<20&&t>=12) {
-        var x = 273;
+    if(t<13&&t>=10) {
+        var x = 271-10*(t-10);
 
-        var y = 164+30*(t-12);
+        var y = 185+26*(t-10);
+
+        return new Array(offsetX + x, offsetY + y);
+    }
+    if(t<18&&t>=13) {
+        var x = 241-24*(t-13);
+
+        var y = 263+23*(t-13);
+
+        return new Array(offsetX + x, offsetY + y);
+    }
+    if(t<20&&t>=18) {
+        var x = 189+24*(t-17);
+
+        var y = 203+17*(t-17);
 
         return new Array(offsetX + x, offsetY + y);
     }
     if(t<22&&t>=20) {
-        var x = 213+30*(t-20);
+        var x = 176+24*(t-19);
 
-        var y = 234;
-
-        return new Array(offsetX + x, offsetY + y);
-    }
-    if(t<24&&t>=22) {
-        var x = 213+30*(t-22);
-
-        var y = 343;
+        var y = 230+19*(t-19);
 
         return new Array(offsetX + x, offsetY + y);
     }
-    if(t<29&&t>=24) {
-        var x = 348-13*(t-24);
+    if(t<28&&t>=22) {
+        var x = 305+28*(t-22);
 
-        var y = 97+28*(t-24);
-
-        return new Array(offsetX + x, offsetY + y);
-    }
-    if(t<33&&t>=29) {
-        var x = 351+30*(t-29);
-
-        var y = 155;
+        var y = 225;
 
         return new Array(offsetX + x, offsetY + y);
     }
-    if(t<41&&t>=33) {
-        var x = 450-3*(t-33);
+    if(t<33&&t>=28) {
+        var x = 355-4*(t-28);
 
-        var y = 185+30*(t-33);
-
-        return new Array(offsetX + x, offsetY + y);
-    }
-    if(t<43&&t>=41) {
-        var x = 432-30*(t-40);
-
-        var y = 395-12*(t-40);
+        var y = 139+30*(t-28);
 
         return new Array(offsetX + x, offsetY + y);
     }
-    if(t<46&&t>=43) {
-        var x = 337+15*(t-43);
+    if(t<38&&t>=33) {
+        var x = 331-25*(t-33);
 
-        var y = 198+19*(t-43);
-
-        return new Array(offsetX + x, offsetY + y);
-    }
-    if(t<50&&t>=46) {
-        var x = 308+27*(t-46);
-
-        var y = 328-13*(t-46);
+        var y = 289+23*(t-33);
 
         return new Array(offsetX + x, offsetY + y);
     }
+    if(t<40&&t>=38) {
+        var x = 369+9*(t-37);
+
+        var y = 225+25*(t-37);
+
+        return new Array(offsetX + x, offsetY + y);
+    }
+    if(t<45&&t>=40) {
+        var x = 396+22*(t-40);
+
+        var y = 300+16*(t-40);
+
+        return new Array(offsetX + x, offsetY + y);
+    }
+	if(t<48&&t>=45) {
+		var x = 385+17*(t-45);
+
+		var y = 141+24*(t-45);
+
+		return new Array(offsetX + x, offsetY + y);
+	}
+	if(t<51&&t>=48) {
+		var x = 205-20*(t-48);
+
+		var y = 392+30*(t-48);
+
+		return new Array(offsetX + x, offsetY + y);
+	}
+	if(t<54&&t>=51) {
+		var x = 250+13*(t-51);
+
+		var y = 389+30*(t-51);
+
+		return new Array(offsetX + x, offsetY + y);
+	}
+	if(t<57&&t>=54) {
+		var x = 326+13*(t-54);
+
+		var y = 389+30*(t-54);
+
+		return new Array(offsetX + x, offsetY + y);
+	}
+	if(t<60&&t>=57) {
+		var x = 400+13*(t-57);
+
+		var y = 389+30*(t-57);
+
+		return new Array(offsetX + x, offsetY + y);
+	}
 }
 var dist = "";
 
@@ -179,7 +214,7 @@ function startHeartAnimation() {
 		
 		}
 		
-		if (angle >= 49) {
+		if (angle >= 59) {
 			
 			clearInterval(animationTimer);
 			
